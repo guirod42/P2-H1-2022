@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YJOVYXosWiGYkDsPopqZuCl8Vc8f6n+p9JHZ8V2pSq36opHfavSh3Dvu3wmFyI1BJf2lTQFAfjWiRphI0zaEvA==",
+  "dgSpecHash": "2ofgd9ixCEesn9LX1b/9F7bkJR66Z/OliRRclyxHKYRacBtwXVAliYHkTDyIDXmmUAhePa2TOVbusIU02MCsPw==",
   "success": true,
-  "projectFilePath": "D:\\ProvaH1\\Calculadora\\Calculadora\\Calculadora.csproj",
+  "projectFilePath": "D:\\GITHUB\\P2-H1-2022\\Calculadora\\Calculadora.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guisi\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\guisi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

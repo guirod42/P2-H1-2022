@@ -1,4 +1,5 @@
-﻿using Calculadora.Model;
+﻿using Calculadora;
+using Calculadora.Model;
 using Microsoft.AspNetCore.Mvc;
 using System.Numerics;
 using System.Security.Cryptography.X509Certificates;
@@ -39,29 +40,26 @@ namespace Calculadora.Controllers
                 }
             }
             if (calorias > 0) return Ok(new { success = true, gastocalorico = calorias });
-
             else return BadRequest(new { success = false, message = "Não foi possível calcular" });
         }
 
         [Route("GastoCaloricoAtividade")]
         [HttpGet]
-        public IActionResult GastoCaloricoAtividade(string atividade, int tempo)
+        public IActionResult GastoCaloricoAtividade([FromQuery] AtividadeViewModel atividade)
         {
-            if (atividade ==  "strings")
-
-            if (atividade == "Caminhada(piso plano)")
-                return Ok(new { success = true, gastocalorico = 6.1 * tempo });
-            if (atividade == "Trabalho doméstico")
-                return Ok(new { success = true, gastocalorico = 4.6 * tempo });
-            if (atividade == "Corrida(5 min / Km)")
-                return Ok(new { success = true, gastocalorico = 16 * tempo });
-            if (atividade == "Bicicleta(9 km / h)")
-                return Ok(new { success = true, gastocalorico = 4.9 * tempo });
-            if (atividade == "Bicicleta(15 Km / h)")
-                return Ok(new { success = true, gastocalorico = 7.7 * tempo });
-            if (atividade == "Alongamento")
-                return Ok(new { success = true, gastocalorico = 5.4 * tempo });
-            return BadRequest(new { success = false, message = "Atividade não existe,calculo não pode ser realizado" });
+            if(atividade.Descricao == "Caminhada(piso plano)")
+                return Ok(new { success = true, gastocalorico = 6.1 * atividade.TempoMin });
+            if (atividade.Descricao == "Trabalho doméstico")
+                return Ok(new { success = true, gastocalorico = 4.6 * atividade.TempoMin });
+            if (atividade.Descricao == "Corrida(5 min / Km)")
+                return Ok(new { success = true, gastocalorico = 16 * atividade.TempoMin });
+            if (atividade.Descricao == "Bicicleta(9 km / h)")
+                return Ok(new { success = true, gastocalorico = 4.9 * atividade.TempoMin });
+            if (atividade.Descricao == "Bicicleta(15 Km / h)")
+                return Ok(new { success = true, gastocalorico = 7.7 * atividade.TempoMin });
+            if (atividade.Descricao == "Alongamento")
+                return Ok(new { success = true, gastocalorico = 5.4 * atividade.TempoMin });
+            return BadRequest(new { success = false, message = "Atividade não existe, calculo não pode ser realizado" });
         }
     }
 }

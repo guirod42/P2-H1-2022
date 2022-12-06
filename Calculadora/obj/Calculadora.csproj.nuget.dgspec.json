@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ProvaH1\\Calculadora\\Calculadora\\Calculadora.csproj": {}
+    "D:\\GITHUB\\P2-H1-2022\\Calculadora\\Calculadora.csproj": {}
   },
   "projects": {
-    "D:\\ProvaH1\\Calculadora\\Calculadora\\Calculadora.csproj": {
+    "D:\\GITHUB\\P2-H1-2022\\Calculadora\\Calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ProvaH1\\Calculadora\\Calculadora\\Calculadora.csproj",
+        "projectUniqueName": "D:\\GITHUB\\P2-H1-2022\\Calculadora\\Calculadora.csproj",
         "projectName": "Calculadora",
-        "projectPath": "D:\\ProvaH1\\Calculadora\\Calculadora\\Calculadora.csproj",
+        "projectPath": "D:\\GITHUB\\P2-H1-2022\\Calculadora\\Calculadora.csproj",
         "packagesPath": "C:\\Users\\guisi\\.nuget\\packages\\",
-        "outputPath": "D:\\ProvaH1\\Calculadora\\Calculadora\\obj\\",
+        "outputPath": "D:\\GITHUB\\P2-H1-2022\\Calculadora\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
